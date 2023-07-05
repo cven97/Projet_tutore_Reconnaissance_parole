@@ -1,7 +1,7 @@
-Voice Command Prediction
+# Voice Command Prediction
 Ce projet consiste en un système de prédiction de commandes vocales à partir d'enregistrements audio. L'objectif est de prédire la commande associée à un enregistrement audio donné à l'aide d'un modèle de classification.
 
-Installation
+## Installation
 Assurez-vous d'avoir les bibliothèques suivantes installées :
 
 numpy
@@ -24,14 +24,14 @@ Placez vos enregistrements audio dans le répertoire Data/DATASET_NEW.
 
 Chargez le modèle pré-entraîné model_entraine.h5 dans le répertoire model.
 
-Exécutez l'application en utilisant la commande 
+## Exécutez l'application en utilisant la commande 
 **Windows
 py app.py.
 
 **Linux
 python3 app.py.
 
-Utilisation
+## Utilisation
 L'application est accessible via une API REST. Vous pouvez envoyer une requête POST à l'URL http://localhost:5000/api/<api_key>/predict pour prédire une commande vocale à partir d'un enregistrement audio.
 
 Assurez-vous d'inclure l'enregistrement audio dans la requête POST en tant que fichier avec la clé audio.
@@ -44,10 +44,10 @@ status : un booléen indiquant si la prédiction a réussi ou échoué.
 mots : le résultat prédit de la commande vocale.
 proposition : une liste de propositions pour le choix suivant.
 
-Contribuer
+### Contribuer
 Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, veuillez soumettre une demande d'extraction avec vos modifications par mail lompolrnt@gmail.com | hamandea@gmail.com
 
-Auteurs
+### Auteurs
 Ce projet a été développé par 
     KOURSANGAMA Hamande hamandea@gmail.com
     LOMPO Laurent lompolrnt@gmail.com

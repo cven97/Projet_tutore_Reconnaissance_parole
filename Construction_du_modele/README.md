@@ -1,8 +1,8 @@
-####################### Reconnaissance de parole ###########################
+# Reconnaissance de parole
 
 Ce projet vise à développer un modèle d'apprentissage automatique pour la Reconnaissance de parole. Le code fourni vous permet de prétraiter les données audio, de construire le modèle et de l'entraîner pour prédire les classes des sons.
 
-Dépendances
+## Dépendances
 
 Le code est écrit en Python et utilise les bibliothèques suivantes :
     librosa
@@ -21,8 +21,7 @@ Assurez-vous d'installer ces bibliothèques avant d'exécuter le code.
 Structure des Répertoires
 Assurez-vous d'organiser vos données audio selon la structure suivante :
 
-markdown
-Copy code
+
 - Data/
   - DATASET/
     - Class1/
@@ -37,7 +36,7 @@ Copy code
 
 Le dossier Data contient le répertoire DATASET qui contient les sous-répertoires pour chaque classe de sons. Chaque classe contient les fichiers audio correspondants.
 
-********* Prétraitement des Données
+## Prétraitement des Données
 Avant de construire et d'entraîner le modèle, vous pouvez effectuer les étapes suivantes de prétraitement des données :
 
     Conversion des fichiers audio en format WAV : Utilisez la fonction conv_dataset(name_list) pour convertir les fichiers audio en format WAV. Assurez-vous d'ajouter les noms des classes dans la liste name_list dans le code.
@@ -46,11 +45,11 @@ Avant de construire et d'entraîner le modèle, vous pouvez effectuer les étape
 
     Coupe des chansons en segments plus courts : Utilisez la fonction cut_dataset(name_list) pour couper les chansons en segments plus courts. Assurez-vous d'ajouter les noms des classes dans la liste name_list dans le code.
 
-********* Construction du Modèle
+## Construction du Modèle
 Le modèle utilisé est un réseau de neurones à plusieurs couches. Voici l'architecture du modèle :
 
 _________________________________________________________________
-Layer (type)                 Output Shape              Param #
+Layer (type)                 Output Shape              Param 
 =================================================================
 dense (Dense)                (None, 1024)              41984
 _________________________________________________________________
@@ -75,7 +74,7 @@ _________________________________________________________________
 activation_3 (Activation)    (None, 1024## Entraînement du Modèle)
 
 
-********* Entraînement du Modèle
+## Entraînement du Modèle
 Une fois que les données ont été prétraitées et que le modèle a été construit, vous pouvez procéder à l'entraînement du modèle en utilisant les étapes suivantes :
 
     Séparation des données en ensembles d'entraînement et de test : Les données sont divisées en ensembles d'entraînement et de test à l'aide de la fonction train_test_split. Par défaut, 80% des données sont utilisées pour l'entraînement et 20% pour les tests. Vous pouvez ajuster ce ratio selon vos besoins.
@@ -95,13 +94,13 @@ Une fois que les données ont été prétraitées et que le modèle a été cons
 
     Courbe d'exactitude : La courbe d'exactitude (accuracy) et d'exactitude de validation (val_accuracy) est tracée pour visualiser l'amélioration de l'exactitude du modèle pendant l'entraînement.
 
-Contribuer
+## Contribuer
 Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, veuillez soumettre une demande d'extraction avec vos modifications par mail lompolrnt@gmail.com | hamandea@gmail.com
 
-Auteurs
+## Auteurs
 Ce projet a été développé par 
-    KOURSANGAMA Hamande hamandea@gmail.com
-    LOMPO Laurent lompolrnt@gmail.com
+    - KOURSANGAMA Hamande hamandea@gmail.com
+    - LOMPO Laurent lompolrnt@gmail.com
     
 Conclusion
 

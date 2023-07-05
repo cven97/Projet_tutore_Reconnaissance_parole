@@ -1,4 +1,4 @@
-**API PROJET DE RECONNAISSANCE VOAAL
+# API PROJET DE RECONNAISSANCE VOAAL
 Ce projet consiste en un système de prédiction de commandes vocales à partir d'enregistrements audio. L'objectif est de prédire la commande associée à un enregistrement audio donné à l'aide d'un modèle de classification.
 
 ## Installation
